@@ -6,8 +6,8 @@ import java.io.File;
 
 public class MainFrame extends JFrame{
     public void initialize(){
-        BufferedImage picture = ImageIO.read(new File("../images/image.jpg"));
-        JLabel picLabel = new JLabel(new ImageIcon(picture));
+        // BufferedImage picture = ImageIO.read(new File("../images/image.jpg"));
+        // JLabel picLabel = new JLabel(new ImageIcon(picture));
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());
         mainPanel.setBackground(new Color(132, 128, 255));
@@ -17,14 +17,11 @@ public class MainFrame extends JFrame{
         setMinimumSize(new Dimension(300, 400));
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
-        add(picLabel);
+        // add(picLabel);
     }
     
 
     public static void main(String[] args){
-        boolean test = false;
-        for (int i = 0; test == false; i++) {
-            System.out.println(i);
-        }
+        new MainFrame();
     }
 }
